@@ -71,3 +71,11 @@ curl -v -k \
   --Header 'Host: www.example.com' \
   https://localhost
   ```
+
+
+  curl -v -k \
+  --key ./client_certs/client_2/client_2.key \
+  --cert ./client_certs/client_2/client_2.crt \
+  --cacert ./certificate_authority/ca.crt \
+  --Header 'Host: www.example.com' \
+  https://localhost
